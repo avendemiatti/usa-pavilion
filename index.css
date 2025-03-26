@@ -507,3 +507,71 @@
     text-decoration: underline; /* Underline on hover */
 }
 
+/* ---- f5-home Section: Form Layout ---- */
+.f5-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.12); /* Match your site's style */
+}
+
+.f5-home h2 {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+
+/* ---- Form Container ---- */
+.interest-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ---- Form Group ---- */
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* ---- Input Fields ---- */
+.form-group input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* ---- Submit Button ---- */
+.interest-form button {
+  align-self: flex-end;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: rgba(10, 49, 97, 1);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  margin-top: 1rem;
+}
+
+/* ---- Responsive Adjustments ---- */
+@media (max-width: 700px) {
+  .interest-form {
+    padding: 1rem;
+  }
+}

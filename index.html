@@ -80,14 +80,36 @@
         <a href="src/exihibitor/index.html"><button class="click-here-button">Clique aqui</button></a>
     </section>
 
-    <section class="f5-home" >
-        <h2>Atividades</h2>
-        <img src="public/images/chef edith.png" alt="">
-        <p>A chef <span>Edith Johnson</span> participará da Anuga Select através de uma aula gastronômica. As vagas são <span>limitadas</span>. Não deixe de participar!</p>
-        <div class="chef-class">
-            <img src="public/images/letter icon.png" alt="">
-            <p>10 de Abril as 13:30</p>
+    <section class="f5-home">
+      <h2>Formulário de Interesse</h2>
+      <form class="interest-form">
+        <div class="form-group">
+          <label for="empresa">Empresa</label>
+          <input type="text" id="empresa" name="empresa" required>
         </div>
+    
+        <div class="form-group">
+          <label for="nomeCompleto">Nome Completo</label>
+          <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="produtoInteresse">Produto de Interesse</label>
+          <input type="text" id="produtoInteresse" name="produtoInteresse" required>
+        </div>
+    
+        <button type="submit">Enviar</button>
+      </form>
     </section>
 
     <section class="f6-home-footer" >
