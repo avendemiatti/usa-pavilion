@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.business-card {
+  width: 150px;
+  height: 300px;
+  background-color: #004225;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.info i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Since we can't load external resources, we'll use pseudo-elements for icons */
+.info .website:before {
+  content: "\f0ac"; /* FontAwesome globe icon */
+  font-family: "Font Awesome 5 Free";
+  margin-right: 10px;
+}
+
+.info .phone:before {
+  content: "\f095"; /* FontAwesome phone icon */
+  font-family: "Font Awesome 5 Free";
+  margin-right: 10px;
+}
+
+.info .email:before {
+  content: "\f0e0"; /* FontAwesome envelope icon */
+  font-family: "Font Awesome 5 Free";
+  margin-right: 10px;
+}
