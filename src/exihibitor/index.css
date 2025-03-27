@@ -322,3 +322,6 @@ h2 {
   text-decoration: underline; /* Underline on hover */
 }
 
+#fepic {
+  height: 60px;
+}

@@ -506,8 +506,7 @@
 .footer-nav li a:hover {
     text-decoration: underline; /* Underline on hover */
 }
-
-/* ---- f5-home Section: Form Layout ---- */
+/* ---- f5-home Section: Overall Layout ---- */
 .f5-home {
   display: flex;
   flex-direction: column;
@@ -523,8 +522,33 @@
   margin-bottom: 1.5rem;
 }
 
-/* ---- Form Container ---- */
+/* ---- f5-home Content Wrapper: Two-Column Layout ---- */
+.f5-home-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
+  gap: 2rem;
+}
+
+/* ---- Interest Text (Left Column) ---- */
+.interest-text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.interest-text p {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  margin: 0;
+  color: #333; /* Adjust if needed */
+}
+
+/* ---- Form Container (Right Column) ---- */
 .interest-form {
+  flex: 1;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -569,9 +593,19 @@
   margin-top: 1rem;
 }
 
+.f5-home-text {
+  font-weight: 500;
+}
+
 /* ---- Responsive Adjustments ---- */
 @media (max-width: 700px) {
+  .f5-home-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
   .interest-form {
-    padding: 1rem;
+    max-width: 100%;
   }
 }
+
